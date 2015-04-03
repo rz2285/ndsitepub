@@ -1,0 +1,202 @@
+/* app.css */
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #3F3F3F;
+   
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    }
+
+
+img:hover {
+  opacity: 0.8;
+}
+/* 1A1A1A */
+.barbox {
+  box-shadow: 7px 7px 7px 7px black;
+}
+
+.mygrid {
+  max-width: 87rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4.2rem;
+`
+}
+
+.logo {
+  margin-left: 5rem;
+  margin-top: .4rem;
+}
+
+.bar {
+  background-color: #6600CC;
+}
+
+.subpagephoto {
+  max-width: 80rem;
+  margin-top: 4.2rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.subpagetext{
+  font-family: 'Josefin Slab', serif;
+  color: #F9F9F9; 
+}
+.subpagetextp{
+  font-family: serif;
+  color: #F9F9F9; 
+  font-size: 1.2rem;
+}
+
+.subpagetextph{
+  font-family: serif;
+  color: #F9F9F9; 
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+.subpagetextc{
+  font-family: 'Josefin Slab', serif;
+  color: #F9F9F9; 
+  font-size: 1.3rem;
+}
+
+.buttonsbar {
+  margin-top: 0.5rem;
+  margin-right: 5rem;
+}
+
+.signbuttons {
+  margin-right: 5rem;
+}
+
+/* from popup tutorial */
+
+
+.grid figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  background: #2c3f52;
+  color: #ed4e6e;
+}
+
+.grid figcaption h3 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.grid figcaption span:before {
+  content: 'by ';
+}
+
+.grid figcaption a {
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 2px;
+  display: inline-block;
+  background: #ed4e6e;
+  color: #fff;
+}
+
+@media screen and (max-width: 31.5em) {
+  .grid {
+    padding: 10px 10px 100px 10px;
+  }
+  .grid li {
+    width: 100%;
+    min-width: 300px;
+  }
+}
+
+
+
+
+
+
+figcaption {
+  height: 100px;
+  width: 100%;
+  top: auto;
+  bottom: 0;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.no-touch img:hover figcaption,
+img.cs-hover figcaption {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: transform 0.4s, opacity 0.1s;
+}
+figcaption a {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.fixed .row .barbox .top-bar  {
+  background-color: black;
+}
+
+.fixed .row .barbox .top-bar .top-bar-section  ul li {
+  background-color: black;
+}
+
+<div class = "fixed">
+<div class="row">
+  <div class="barbox">
+  <nav class="top-bar" data-topbar>
+
+    <ul class="title-area">
+      <li class="name">
+        {# logo with link to home #}
+      <a href="/">
+        <div class = "logo">
+          <img src="{{ url_for('static', filename='img/logo.png', _external=True) }}" height="50" width="100" style="PADDING-RIGHT: 1rem" style="PADDING-TOP: 3em" class="clearfix"/>
+        </div>
+      </a>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+
+
+  <section class="top-bar-section">
+    <ul class="left">
+
+/*.imageHolder { 
+  position: relative; 
+  width: 800px; 
+} 
+
+.imageHolder .caption { 
+  position: absolute; 
+  width: 800px; 
+  height: 50px; 
+  bottom: 0px; 
+  left: 0px; 
+  color: #ffffff; 
+  background: green; 
+  text-align:center; 
+  font-weight:bold; 
+  opacity:0.7; 
+} */
+
+
+
+
+
+
+

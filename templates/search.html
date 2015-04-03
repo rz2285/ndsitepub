@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}
+search
+{% endblock %}
+
+{% block body %} 
+	
+	<div class="row">
+		<div class="large-2 columns">
+			<p></p>
+		</div>
+		<div class="large-8 columns">
+			<h1>Search</h1>
+
+	<form action="search" method="post">
+		<input type="text" placeholder="___.php" name="user_search" required/>
+
+		<button type="submit">Submit</button>
+	</form>
+</div>
+<div class="large-2 columns">
+	</div> 
+</div>
+{% endblock %} 
+
