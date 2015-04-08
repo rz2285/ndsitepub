@@ -1,8 +1,7 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, flash, url_for, abort, send_from_directory
 from flaskapp import app as application
-
-
-
+import os
+from datetime import datetime
 
 
 app = Flask(__name__, static_url_path='')
@@ -15,7 +14,9 @@ app.config["DEBUG"] = True
 def page_not_found(error):
     return "Sorry, this page was not found."
 
-
+@app.route("/test")
+def test():
+    return "<strong>It's Alive!</strong>"
 
 #service page
 @app.route("/service")
