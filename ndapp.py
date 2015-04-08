@@ -6,8 +6,7 @@ from datetime import datetime
 
 app = Flask(__name__, static_url_path='')
 
-#do not inculed in finished app
-app.config["DEBUG"] = True
+app.config.from_pyfile('ndapp.cfg')
 
 #error message
 @app.errorhandler(404)
