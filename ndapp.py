@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, flash, url_for, abort, send_from_directory
-from flaskapp import app as application
 import os
 from datetime import datetime
 
@@ -67,6 +66,30 @@ def homegrid2():
 @app.route("/signin")
 def signin():
     return render_template("signin.html")
+
+@app.route("/start_reservation")
+def start_reservation():
+    return render_template("start_reservation.html")
+
+@app.route("/restaurant_categories")
+def restaurant_categories():
+    return render_template("restaurant_categories.html")
+
+@app.route("/account_management")
+def account_management():
+    return render_template("account_management.html")
+
+@app.route("/upcoming_reservation")
+def upcoming_reservation():
+    return render_template("upcoming_reservation.html")
+
+@app.route("/give_feedback")
+def give_feedback():
+    return render_template("give_feedback.html")
+
+@app.route("/reservation_history")
+def reservation_history():
+    return render_template("reservation_history.html")
 
 
 

@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block title %}
+Account Management
+{% endblock %}
+
+{% block body %}
+
+{# container #}
+
+<div class="subpagephoto">
+<div class="row">    
+          
+<div class="large-9 push-3 columns">
+    <h3><span class="subpagetext">Account Management</span></h3>
+    <span class="subpagetextp">
+        <p>Name
+            <input type="text"/>
+        </p>
+    </span>
+    <span class="subpagetextp">
+        <p>Email
+            <input type="text"/>
+        </p>
+    </span>
+    <span class="subpagetextp">
+        <p>Old Password
+            <input type="text"/>
+        </p>
+    </span>
+    <span class="subpagetextp">
+        <p>New Password
+            <input type="text"/>
+        </p>
+    </span>
+    <span class="subpagetextp">
+        <p>Confirm Password
+            <input type="text"/>
+        </p>
+    </span>
+    <span class="subpagetextp">
+        <p>Promo Code
+            <input type="text"/>
+        </p>
+    </span>
+    <button type="submit">Update</button>
+    <button type="submit">Purchase Membership</button>
+</div>
+
+
+ 
+ 
+<div class="large-3 pull-9 columns">
+    
+  <ul class="side-nav">
+    <li><a href="/start_reservation">Start Reservation</a></li>
+    <li><a href="/upcoming_reservation">Upcoming Reservation</a></li>
+    <li><a href="/reservation_history">Reservation History</a></li>
+    <li><a href="/account_management">Account Management</a></li>
+    <li><a href="/restaurant_categories">Restaurant Categories</a></li>
+    <li><a href="/give_feedback">Give Feedback</a></li>
+  </ul>
+    
+</div>
+
+</div>
+</div>
+
+    
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}
+Start Reservation
+{% endblock %}
+
+{% block body %}
+
+{# container #}
+
+<div class="subpagephoto">
+<div class="row">    
+          
+<div class="large-9 push-3 columns">
+    <h3><span class="subpagetext">Start Reservation</span></h3>
+    <span class="subpagetextp">
+        <p>Number of People
+            <input type="text"/>
+        </p>
+    </span>
+    <span class="subpagetextp">
+        <p>Time</p>
+    </span>
+    <select>
+        <option value="today">Today</option>
+        <option value="tomorrow">Tomorrow</option>
+    </select>
+    <select>
+        <option value="8pm">8pm</option>
+        <option value="9pm">9pm</option>
+    </select>
+    <button type="submit">Continue</button>
+        
+</div>
+
+
+ 
+ 
+<div class="large-3 pull-9 columns">
+    
+  <ul class="side-nav">
+    <li><a href="/start_reservation">Start Reservation</a></li>
+    <li><a href="/upcoming_reservation">Upcoming Reservation</a></li>
+    <li><a href="/reservation_history">Reservation History</a></li>
+    <li><a href="/account_management">Account Management</a></li>
+    <li><a href="/restaurant_categories">Restaurant Categories</a></li>
+    <li><a href="/give_feedback">Give Feedback</a></li>
+  </ul>
+    
+</div>
+
+</div>
+</div>
+
+    
+{% endblock %}
